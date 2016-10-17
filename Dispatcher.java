@@ -19,6 +19,7 @@ class Dispatcher {
     private void testForNextLoop() {
         readyForNextLoop = commandRecognizer.inputType != InputType.End;
     }
+	// The main functional method in this class.
     private void dispatch() {
         if (commandRecognizer.inputType == InputType.Expression) {
             try {

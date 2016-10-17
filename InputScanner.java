@@ -12,7 +12,7 @@ public class InputScanner {
             inputString = scanner.nextLine();
             dispatch(inputString);
         } while(nextLoop);                                  // 循环接收并处理每一行输入，直到dispatcher通知不再接收新输入为止
-        scanner.close();
+        scanner.close();									// Close the stream the moment we no longer expect new input.
     }
     private boolean nextLoop;
     private Dispatcher dispatcher;
