@@ -4,6 +4,7 @@ import java.util.HashMap;
 /**
  * Created by Xiangxi and Yuanze on 2016/9/18.
  */
+ // The main function class of this program.
 class Expression {
     private boolean compiledMark;
     private ArrayList<Term> resultTerms;
@@ -40,7 +41,7 @@ class Expression {
         return toString(compileResults);
     }
 
-    private String toString(ArrayList<NumericTerm> polynomial) {            // 将numericTerm形式存储的多项式转化为字符串输出
+    private String toString(ArrayList<NumericTerm> polynomial) {            // 将numericTerm形式存储多项式转化为字符串输出
         if (polynomial.size() == 0)                                         // 若多项式不包含任何项，则输出"0"
             return "0";
         String result = transFromNumericTermToString(polynomial.get(0));
