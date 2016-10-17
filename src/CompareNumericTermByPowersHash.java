@@ -11,7 +11,7 @@ class CompareNumericTermByPowersHash implements Comparator {
         NumericTerm term2 = (NumericTerm) o2;
         if (getHashCode(term1.powers) > getHashCode(term2.powers))
             return 1;
-        return 0;
+        return 0;   // 对B2进行的修改
     }
 
     public static long getHashCode(ArrayList<Integer> list) {

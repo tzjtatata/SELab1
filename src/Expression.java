@@ -16,7 +16,7 @@ class Expression {
     public Expression() {
         variableList = new HashMap<>();
         compileResults = new ArrayList<>();
-        compiledMark = false;
+        compiledMark = false;   // 对B2进行的修改
     }
 
     public void compile(String expression) throws ExpressionCompileException{
