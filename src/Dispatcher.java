@@ -19,7 +19,7 @@ class Dispatcher {
     private void testForNextLoop() {
         readyForNextLoop = commandRecognizer.inputType != InputType.End;
     }
-    private void dispatch() {
+    private void dispatch() {       // »ŒŒÒ∑÷≈‰∆˜
         if (commandRecognizer.inputType == InputType.Expression) {
             try {
                 expression = null;
