@@ -6,7 +6,7 @@ import java.util.HashMap;
  */
 
 class Expression {
-  private static boolean compiledMark;
+  private boolean compiledMark;
   private ArrayList<Term> resultTerms;
   private HashMap<String, Integer> variableList;
   private int variableNumber;
@@ -30,9 +30,9 @@ class Expression {
       generateVariableList();
       transformIntoNumeric();
       mergeResults();
-    } catch (ExpressionCompileException eeE) {
+    } catch (ExpressionCompileException e) {
       compiledMark = false;
-      throw eeE;
+      throw e;
     }
     compiledMark = true;
   }
